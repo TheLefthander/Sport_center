@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
+	<title>jQuery Parallax 0.2 | pcvector.net</title>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script src="js/jquery.parallax-0.2-min.js" type="text/javascript"></script>
+	<link rel="stylesheet" media="screen" type="text/css" href="css/screen.css" />
+</head>
+
+<body class="home">
+	
+	<div id="main">
+		<div class="wrapper outer">
+			<div class="wrapper inner">
+			  <br/><br/><br/><br/><br/>
+			  <br/><br/><br/><br/><br/>
+			  <br/><br/><br/><br/><br/>
+			  <br/><br/><br/><br/><br/>
+			</div><!-- /.wrapper inner -->
+
+		</div><!-- /.wrapper outer -->
+	</div><!-- /#main -->
+	
+	<script type="text/javascript">
+	  $('body').parallax({
+      'elements': [
+        {
+          'selector': 'body',
+          'properties': {
+            'x': {
+              'background-position-x': {
+                'initial': 0,
+                'multiplier': 0.1,
+                'invert': true
+              }
+            }
+          }
+        },
+        {
+          'selector': 'div.outer',
+          'properties': {
+            'x': {
+              'background-position-x': {
+                'initial': 50,
+                'multiplier': 0.02,
+                'unit': '%'
+              }
+            }
+          }
+        },
+        {
+          'selector': 'div.inner',
+          'properties': {
+            'x': {
+              'background-position-x': {
+                'initial': 0,
+                'multiplier': 0.3
+              }
+            }
+          }
+        }
+      ]
+    });
+	</script>
+	
+	<div id="test"></div>
+	
+<!-- pcvector.net -->	 
+<script type="text/javascript" src="/templates/pcv/js/pcvector.js"></script>
+<!-- pcvector.net -->	
+</body>
+</html>
